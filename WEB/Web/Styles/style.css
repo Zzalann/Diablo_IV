@@ -7,6 +7,13 @@ body{
     height: 1680px;
     font-family: 'Rubik', sans-serif;
 }
+.hatter{
+    z-index: -1;
+    position: fixed;
+    top:50px;
+    height:900px;
+    background-repeat: no-repeat;
+}
 button{
     font-family: 'Rubik', sans-serif;
 }
