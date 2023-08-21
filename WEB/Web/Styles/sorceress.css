@@ -1,0 +1,198 @@
+body{
+    background-image: url(/img/diablo-4-wallpaper-kyovashad.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position-y: -60px;
+    height: 1680px;
+    font-family: 'Rubik', sans-serif;
+}
+button{
+    font-family: 'Rubik', sans-serif;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 160px;
+    background-color: black;
+    color: grey;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    box-shadow: 0px 0px 5px;
+    height: 1600px;
+}
+.dismount{
+    margin-bottom: 20px;
+}
+.menubar{
+    align-items: center;
+    position:fixed;
+    top:0px;
+    left:0px;
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-bottom-color: grey;
+    border-top-color: black;
+    border-right-color: black;
+    border-left-color: black;
+    justify-content: space-around;
+    color: grey;
+    box-shadow: 0px 1px 5px;
+}
+.logokep{
+    height: 60px;
+}
+.diablokep{
+    height: 70px;
+}
+.blizzardkep{
+    height: 50px;
+    margin-top:10px;
+   
+}
+.gomb{
+    Background-color:black;
+    color: white;
+    font-size: 15px;
+    border-width: 0px;
+    padding: 15px;
+    border-radius: 7px;
+}
+.gomb:hover{
+    background-color: rgb(61, 61, 61);
+    cursor: pointer;
+}
+.barbariankep{
+    height: 286px;
+}
+.story{
+    display: flex;
+    font-style: oblique;
+    align-items: center;
+}
+.skillek{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-style: oblique;
+}
+.tablazat, td,th,tr{
+    border-collapse:collapse;
+    border: 1px solid grey;
+    padding: 5px;
+}
+td{
+    vertical-align: text-top;
+}
+.tablazat{
+    margin-bottom: 20px;
+}
+.karakterek{
+    margin-bottom: 50px;
+}
+.h1{
+    text-align: center;
+    font-size:xx-large;
+    margin-bottom: 40px;
+    margin-top:30px;
+}
+.class{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+.headbar{
+    margin-bottom: 0px;
+}
+.kozepso{
+    padding:20px;
+    border-color:grey;
+    border-bottom-color:black;
+    border-width: 1px;
+    border-style: solid;
+    border-left-color: black;
+    border-right-color:black;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.also{
+    display: flex;
+    flex-direction: column;
+    padding:px;
+    border-color:grey;
+    border-width: 1px;
+    border-style: solid;
+    border-left-color: black;
+    border-right-color:black;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+}
+.storykep{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.lilithstorykep{
+    height: 200px;
+}
+.map{
+    height: 200px;
+}
+.szöveg{
+    margin-right:20px;
+}
+.forras{
+    margin-top: 20px;
+    margin-left: -500px;
+}
+.return{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: underline;
+    color: grey;
+}
+.ikon{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left:0px;
+    top: 100px;
+    background-color: black;
+    border-color:grey;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 1px 0px 5px grey;
+}
+.kiskep{
+    height: 80px;
+    margin:8px;
+}
+.classfelirat{
+    margin-left: 20px;
+    margin-top: 10px;
+    color:grey;
+}
+.jelenlegi{
+    opacity: 0.3;
+}
