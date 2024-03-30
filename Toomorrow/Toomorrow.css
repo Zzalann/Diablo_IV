@@ -24,15 +24,22 @@ body {
     left: 0px;
     right: 0px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between; 
+    align-items: center; 
     border-bottom-width: 3px;
     border-style: solid;
-    align-items: center;
     border-bottom-color: gray;
     height: 90px;
     z-index: 999;
 }
+
+.menu-icon {
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: 35px;
+}
+
+
 
 .hbgomb {
     padding: 25px;
@@ -99,7 +106,7 @@ body {
     opacity: 1; 
 }
 
-a {
+a{
     text-decoration: none;
 }
 
@@ -111,31 +118,47 @@ a {
     border-top-color: gray;
     border-style: solid;
 }
-
 .elerhetoseg{
     margin: 0;
     color: gray;
+}.menu-icon {
+    display: none; 
+    height : 50px;
 }
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens */
-    .headbar .linkek {
-        display: none; /* Hide the social media links */
-        position: absolute;
-        top: 90px;
-        background-color: rgb(6, 6, 6);
-        width: 100%;
-        text-align: center;
-    }
-
-    .headbar:hover .linkek {
-        display: block; /* Show the social media links when hovering over the header */
-    }
-
-    .linkek a {
-        display: block;
-        padding: 10px 0;
-        color: white;
-        text-decoration: none;
-    }
+.listaikon{
+    height: 50px;
 }
+@media screen and (max-width: 958px) {
+    .menu-icon {
+        display: block; 
+        cursor: pointer;
+        height: 10px;
+    }
+    .linkek {
+        align-items: center;
+        display: none; 
+        flex-direction: column;
+        width: 90%; 
+        max-width: 300px; 
+        margin: auto;
+        margin-top: auto; 
+        margin-bottom: 10px;
+        background-color: rgb(6, 6, 6); 
+        border-color:gray;
+    }
+    .listaikon{
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    
+}
+@media screen and (max-width: 828px) {
+.kozepso{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+}
+
+
+
+
