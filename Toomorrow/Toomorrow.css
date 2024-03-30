@@ -182,6 +182,19 @@ a{
     }
     
 }
+@media screen and (max-width: 450px) {
+    .hbgomb .logok {
+        display: inline; /* Megjelenítjük az ikonokat */
+    }
+    .hbgomb {
+        justify-content: flex-start; /* A tartalmat balra igazítjuk */
+        
+    }
+    
+    .hbgomb span {
+        display: none; /* Rejtjük a szöveget */
+    }
+}
 
 
 
