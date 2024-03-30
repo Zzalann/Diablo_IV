@@ -116,3 +116,28 @@ a {
     margin: 0;
     color: gray;
 }
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .headbar {
+        flex-direction: column;
+        height: auto;
+    }
+    .headbar .linkek {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .kozepso {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+    .kozepso .szoveg {
+        margin: 20px;
+    }
+    .kozepso .szovegkep {
+        height: auto;
+        width: 100%;
+    }
+}
