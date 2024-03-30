@@ -116,28 +116,26 @@ a {
     margin: 0;
     color: gray;
 }
+/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     /* Adjust styles for smaller screens */
-    .headbar {
-        flex-direction: column;
-        height: auto;
-    }
     .headbar .linkek {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
-    .kozepso {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 150px;
-        margin-bottom: 150px;
-    }
-    .kozepso .szoveg {
-        margin: 20px;
-    }
-    .kozepso .szovegkep {
-        height: auto;
+        display: none; /* Hide the social media links */
+        position: absolute;
+        top: 90px;
+        background-color: rgb(6, 6, 6);
         width: 100%;
+        text-align: center;
+    }
+
+    .headbar:hover .linkek {
+        display: block; /* Show the social media links when hovering over the header */
+    }
+
+    .linkek a {
+        display: block;
+        padding: 10px 0;
+        color: white;
+        text-decoration: none;
     }
 }
