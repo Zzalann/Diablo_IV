@@ -1,0 +1,118 @@
+body {
+    font-family: Oswald;
+    background-image: url('img/PressToomorrow.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(5, 5, 5);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+}
+
+.tm {
+    height: 90px;
+}
+
+.headbar {
+    background-color: rgb(6, 6, 6);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom-width: 3px;
+    border-style: solid;
+    align-items: center;
+    border-bottom-color: gray;
+    height: 90px;
+    z-index: 999;
+}
+
+.hbgomb {
+    padding: 25px;
+    background-color: rgb(6, 6, 6);
+    margin: 10px;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    border: none;
+}
+
+.hbgomb:hover {
+    cursor: pointer;
+    background-color: rgb(20, 20, 20);
+}
+
+.hbgomb:active {
+    background-color: rgb(40, 40, 40);
+}
+
+.logok {
+    height: 30px;
+    margin-right: 5px;
+}
+
+.egygomb {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.linkek {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.kozepso {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 500px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 300px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.kozepso .szoveg {
+    color: white;
+    font-size: larger;
+    margin-right: 20px;
+}
+
+.kozepso .szovegkep {
+    height: 400px;
+    opacity: 1; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.alsoresz {
+    background-color: black;
+    margin-top: auto;
+    padding: 20px; 
+    border-width: 3px;
+    border-top-color: gray;
+    border-style: solid;
+}
+
+.elerhetoseg{
+    margin: 0;
+    color: gray;
+}
