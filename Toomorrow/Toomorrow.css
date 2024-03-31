@@ -83,7 +83,7 @@ body {
 #kapcsolatLeiras {
     display: none;
     position: absolute;
-    top: 95px;
+    top: 93px;
     right: 0;
     width: 200px;
     background-color: rgb(6, 6, 6);
@@ -99,7 +99,7 @@ body {
 #megjelenoLinkek{
     display: none;
     position: absolute;
-    top: 105px;
+    top: 103px;
     left: 0;
     width: 200px;
     background-color: rgb(6, 6, 6);
