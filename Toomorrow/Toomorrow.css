@@ -21,9 +21,6 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items:center;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 50px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
     margin-left: 100px;
@@ -57,15 +54,10 @@ body {
     height: 90px;
     z-index: 999;
 }
-
-.menu-icon {
-    margin-left: auto; 
-    margin-right: auto; 
-    margin-bottom: 35px;
-}
 .leiras {
-    display: none; /* Alapértelmezés szerint rejtett */
+    display: none;
     margin-top: 10px;
+    font-size:large;
 }
 .hbgomb {
     padding: 25px;
@@ -77,6 +69,8 @@ body {
     justify-content: center;
     color: white;
     border: none;
+    font-size:x-large;
+    font-family: Oswald;
 }
 .hbgomb:hover {
     cursor: pointer;
@@ -94,7 +88,10 @@ body {
     width: 200px;
     background-color: rgb(6, 6, 6);
     padding: 20px;
-    border-bottom-color: white;
+    border-bottom-color: gray;
+    border-left-color: gray;
+    border-left-width: 2px;
+    border-left-style: solid;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     color: white;
@@ -107,7 +104,10 @@ body {
     width: 200px;
     background-color: rgb(6, 6, 6);
     padding: 20px;
-    border-bottom-color: white;
+    border-bottom-color: gray;
+    border-right-color: gray;
+    border-right-width: 2px;
+    border-right-style: solid;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     color: white;
@@ -176,21 +176,21 @@ a{
     .kozepso {
         flex-direction: column;
         align-items: center;
-        margin-top: 200px; /* Adjust margin-top as needed */
-        margin-bottom: 100px; /* Adjust margin-bottom as needed */
+        margin-top: 200px; 
+        margin-bottom: 100px; 
         padding: 20px;
         background-color: rgba(0, 0, 0, 0.7);
     }
     
     .kozepso .szoveg {
         color: white;
-        font-size: 16px; /* Adjust font size as needed */
-        text-align: center; /* Center-align text */
-        margin: 20px 0; /* Adjust margin as needed */
+        font-size: 16px; 
+        text-align: center; 
+        margin: 20px 0; 
     }
     
     .kozepso .szovegkep {
-        max-width: 100%; /* Ensure image doesn't overflow container */
+        max-width: 100%; 
         height: auto; /* Maintain aspect ratio */
         margin-bottom: 20px; /* Adjust margin as needed */
     }
