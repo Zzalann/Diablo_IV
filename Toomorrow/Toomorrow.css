@@ -6,7 +6,7 @@ body {
     background-position: center;
     background-size: cover;
     background-color: rgb(5, 5, 5);
-    height: 800px;
+    height: 1700px;
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
@@ -16,7 +16,32 @@ body {
 .tm {
     height: 90px;
 }
-
+.spoti{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 150px;
+}
+.spotiszoveg{
+    color: white;
+    font-size: larger;
+    margin-right: 20px;
+    width: 1000px;
+}
+.lejatszo{
+    width: 400px;   
+    height: 400px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
 .headbar {
     background-color: rgb(6, 6, 6);
     position: fixed;
@@ -29,6 +54,7 @@ body {
     border-bottom-width: 3px;
     border-style: solid;
     border-bottom-color: gray;
+    padding-bottom: 10px;
     height: 90px;
     z-index: 999;
 }
@@ -38,14 +64,14 @@ body {
     margin-right: auto; 
     margin-bottom: 35px;
 }
-
-
-
+.leiras {
+    display: none; /* Alapértelmezés szerint rejtett */
+    margin-top: 10px;
+}
 .hbgomb {
     padding: 25px;
     background-color: rgb(6, 6, 6);
     margin: 10px;
-    border-radius: 15px;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -53,12 +79,40 @@ body {
     color: white;
     border: none;
 }
-
 .hbgomb:hover {
     cursor: pointer;
     background-color: rgb(20, 20, 20);
+    border-bottom-color: white;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
 }
 
+#kapcsolatLeiras {
+    display: none;
+    position: absolute;
+    top: 95px;
+    right: 0;
+    width: 200px;
+    background-color: rgb(6, 6, 6);
+    padding: 20px;
+    border-bottom-color: white;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    color: white;
+}
+#megjelenoLinkek{
+    display: none;
+    position: absolute;
+    top: 105px;
+    left: 0;
+    width: 200px;
+    background-color: rgb(6, 6, 6);
+    padding: 20px;
+    border-bottom-color: white;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    color: white;
+}
 .hbgomb:active {
     background-color: rgb(40, 40, 40);
 }
@@ -87,10 +141,10 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 500px;
+    margin-top: 700px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 300px;
+    margin-bottom: 50px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
 }
@@ -109,15 +163,6 @@ body {
 a{
     text-decoration: none;
 }
-
-.alsoresz {
-    background-color: black;
-    margin-top: auto;
-    padding: 20px; 
-    border-width: 3px;
-    border-top-color: gray;
-    border-style: solid;
-}
 .elerhetoseg{
     margin: 0;
     color: gray;
@@ -127,30 +172,6 @@ a{
 }
 .listaikon{
     height: 50px;
-}
-@media screen and (max-width: 958px) {
-    .menu-icon {
-        display: block; 
-        cursor: pointer;
-        height: 10px;
-    }
-    .linkek {
-        align-items: center;
-        display: none; 
-        flex-direction: column;
-        width: 90%; 
-        max-width: 300px; 
-        margin: auto;
-        margin-top: auto; 
-        margin-bottom: 10px;
-        background-color: rgb(6, 6, 6); 
-        border-color:gray;
-    }
-    .listaikon{
-        height: 50px;
-        margin-bottom: 20px;
-    }
-    
 }
 @media screen and (max-width: 828px) {
 .kozepso{
@@ -182,19 +203,12 @@ a{
     }
     
 }
-@media screen and (max-width: 450px) {
-    .hbgomb .logok {
-        display: inline; /* Megjelenítjük az ikonokat */
-    }
-    .hbgomb {
-        justify-content: flex-start; /* A tartalmat balra igazítjuk */
-        
-    }
-    
-    .hbgomb span {
-        display: none; /* Rejtjük a szöveget */
+@media screen and (max-width: 650px) {
+    .tm{
+        display: none;
     }
 }
+
 
 
 

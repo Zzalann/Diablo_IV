@@ -1,29 +1,23 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const menuIcon = document.querySelector('.menu-icon');
-    const links = document.querySelector('.linkek');
+    const kapcsolatGomb = document.getElementById('kapcsolatGomb');
+    const kapcsolatLeiras = document.getElementById('kapcsolatLeiras');
 
-    menuIcon.addEventListener('click', function() {
-        const currentDisplayStyle = window.getComputedStyle(links).getPropertyValue('display');
-
-        if (currentDisplayStyle === 'none' || currentDisplayStyle === '') {
-            links.style.display = 'flex';
+    kapcsolatGomb.addEventListener('click', function() {
+        if (kapcsolatLeiras.style.display === 'none' || kapcsolatLeiras.style.display === '') {
+            kapcsolatLeiras.style.display = 'block';
         } else {
-            links.style.display = 'none';
+            kapcsolatLeiras.style.display = 'none';
         }
     });
 
-    // Ellenőrizzük a képernyő szélességét, és csak kis képernyőn jelenítjük meg alapértelmezetten a listát
-    function checkScreenWidth() {
-        if (window.innerWidth <= 958) {
-            links.style.display = 'none';
+    const socialmediaGomb = document.getElementById('socialmediaGomb');
+    const megjelenoLinkek = document.getElementById('megjelenoLinkek');
+    
+    socialmediaGomb.addEventListener('click', function() {
+        if (megjelenoLinkek.style.display === 'none' || megjelenoLinkek.style.display === '') {
+            megjelenoLinkek.style.display = 'block';
         } else {
-            links.style.display = 'flex';
+            megjelenoLinkek.style.display = 'none';
         }
-    }
-
-    // Az ablak méretének változásakor ellenőrizzük újra a képernyő szélességét
-    window.addEventListener('resize', checkScreenWidth);
-
-    // Oldal betöltésekor is ellenőrizzük az ablak szélességét
-    checkScreenWidth();
+    });
 });
